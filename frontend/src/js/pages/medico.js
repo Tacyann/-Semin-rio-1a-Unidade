@@ -30,17 +30,16 @@ export class Medico extends Especialidade
         let p2 = document.createElement("p");
         index.append(p2);
 
-        <select onchange="especialidade(this.esp)">
-            <option>Endocrinologista</option>
-            <option>Oftalmologista</option>
-            <option>Nutrologo</option>
-            <option>Ginecologista</option>
-            <option>Reumatologista</option>
-        </select>
+        let descEspecialidadeLabel = document.createElement("label");
+        descEspecialidade.textContent = "Especialidade: ";
+        index.append(descEspecialidadeLabel);
 
-        function especialidade(esp){
-            alert(esp)
-        }
+        let descEspecialidadeInput = document.createElement("input");
+        descEspecialidadeInput.type = "text";
+        index.append(descEspecialidadeInput);
+
+        let p3 = document.createElement("p");
+        index.append(p3);
 
         let botao = document.createElement("button");
         botao.textContent = "Enviar";
@@ -49,8 +48,9 @@ export class Medico extends Especialidade
             new MedicoController().setClick({
                 nomeMedico,
                 CRM,
-                descEspecialidade
-            });
+                descEspecialidade,
+
+                        });
         });
         
         index.append(botao);

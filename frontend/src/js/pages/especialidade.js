@@ -1,4 +1,4 @@
-import { EspecialidadeController } from "../controllers/especialidadecontroller";
+import { EspecialidadeController } from "../controller/especialidadecontroller.js";
 
 export class Especialidade
 {

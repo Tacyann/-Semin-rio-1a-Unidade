@@ -1,4 +1,4 @@
-import { PacienteController } from "../controllers/pacientecontroller";
+import { PacienteController } from "../controller/pacientecontroller";
 
 export class Paciente
 {

@@ -1,7 +1,7 @@
-import { Route } from "./router";
-import { Paciente } from "./pages/paciente";
-import { Especialidade } from "./pages/especialidade";
-import { Medico } from "./pages/medico";
+import { Route } from "./route.js";
+import { Paciente } from "./pages/paciente.js";
+import { Especialidade } from "./pages/especialidade.js";
+import { Medico } from "./pages/medico.js";
 
 export class Controller
 {

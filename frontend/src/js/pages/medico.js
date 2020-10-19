@@ -1,4 +1,4 @@
-import { MedicoController } from "../controllers/medicocontroller";
+import { MedicoController } from "../controller/medicocontroller";
 import { Especialidade } from "./especialidade";
 
 export class Medico extends Especialidade

@@ -18,8 +18,7 @@ export class Controller
             case "":
             case "index":
             case "home":
-                new Paciente().criar();
-                new Medico().criar();
+                new Especialidade().criar();
                 break;
 
         }

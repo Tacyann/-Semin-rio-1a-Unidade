@@ -1,5 +1,5 @@
 import { MedicoController } from "../controllers/medicocontroller";
-import { Especialidade } from "../pages/especialidade";
+import { Especialidade } from "./especialidade";
 
 export class Medico extends Especialidade
 {
@@ -29,6 +29,18 @@ export class Medico extends Especialidade
 
         let p2 = document.createElement("p");
         index.append(p2);
+
+        <select onchange="especialidade(this.esp)">
+            <option>Endocrinologista</option>
+            <option>Oftalmologista</option>
+            <option>Nutrologo</option>
+            <option>Ginecologista</option>
+            <option>Reumatologista</option>
+        </select>
+
+        function especialidade(esp){
+            alert(esp)
+        }
 
         let botao = document.createElement("button");
         botao.textContent = "Enviar";

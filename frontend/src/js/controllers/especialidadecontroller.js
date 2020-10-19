@@ -16,7 +16,7 @@ export class EspecialidadeController
         // != get
         // post
         fetch (
-            'https://api.github.com/users',
+            'https://web-unit.herokuapp.com/clientes',
             {
                 method: 'POST',
                 headers: {'Content-type' : 'application/json'},

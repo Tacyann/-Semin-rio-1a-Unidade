@@ -19,7 +19,6 @@ export class Especialidade
         index.append(p1);
 
     
-
         botao.addEventListener("click", ()=>{
             new EspecialidadeController().setClick({
                 descEspecialidade

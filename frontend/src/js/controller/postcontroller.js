@@ -10,7 +10,7 @@ export class PostController
 
         this.dado = {  
         "user_id": props.user_idInput.value,
-        "titleInput": props.titleInput.value,
+        "title": props.titleInput.value,
         "body": props.bodyInput.value,
                 
         }

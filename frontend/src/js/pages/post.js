@@ -47,7 +47,7 @@ export class Post
             new PostController().setClick({
                 user_id,
                 titleInput,
-                body
+                bodyInput
             });
         });
         

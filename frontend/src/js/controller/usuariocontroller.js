@@ -9,10 +9,10 @@ export class UsuarioController
     {
 
         this.dado = {
-            "name": props.nomePacienteInput.value,
-            "email": props.datNascimentoInput.value,
-            "gender": props.telPacienteInput.value,
-            "status": props.telPacienteInput.value
+            "name": props.nameInput.value,
+            "email": props.emailInput.value,
+            "gender": props.genderInput.value,
+            "status": props.statusInput.value
                 
         }
 
@@ -30,7 +30,7 @@ export class UsuarioController
         ).then( response =>{
             if (response.ok)
             {
-                console.log("Medico cadastrado com sucesso!");
+                console.log("Usuário cadastrado com sucesso!");
                 console.log(response);
             }else
             {

@@ -1,5 +1,4 @@
 import { Route } from "./route.js";
-import { Paciente } from "./pages/paciente.js";
 import { Usuario } from "./pages/usuario.js";
 import { Post } from "./pages/post.js";
 
@@ -18,7 +17,8 @@ export class Controller
             case "":
             case "index":
             case "home":
-                new Especialidade().criar();
+                new Usuario().criar();
+                new Post().criar();
                 break;
 
         }

@@ -1,4 +1,4 @@
-export class MedicoController
+export class UsuarioController
 {
     constructor ()
     {
@@ -9,9 +9,10 @@ export class MedicoController
     {
 
         this.dado = {
-            "nomeMedico": props.nomePacienteInput.value,
-            "CRM": props.datNascimentoInput.value,
-            "descEspecialidade": props.telPacienteInput.value,
+            "name": props.nomePacienteInput.value,
+            "email": props.datNascimentoInput.value,
+            "gender": props.telPacienteInput.value,
+            "status": props.telPacienteInput.value
                 
         }
 
@@ -21,7 +22,8 @@ export class MedicoController
             'https://gorest.co.in/public-api/users',
             {
                 method: 'POST',
-                headers: {'Content-type' : 'application/json', "Access-Control-Allow-Origin" : "*"},
+                headers: {"Access-Control-Allow-Origin":"*",
+                "Access-Control-Allow-Headers": "Content-Type , Access-Control-Allow-Headers, Authorization, X-Requested-With"},
             
                 body: JSON.stringify(this.dado)
             }

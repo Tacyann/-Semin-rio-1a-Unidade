@@ -1,4 +1,4 @@
-export class EspecialidadeController
+export class PostController
 {
     constructor ()
     {
@@ -8,15 +8,17 @@ export class EspecialidadeController
     setClick = ( props ) =>
     {
 
-        this.dado = {
-            "descEspecialidade": props.descEspecialidadeInput.value
+        this.dado = {  
+        "user_id": props.user_idInput.value,
+        "titleInput": props.titleInput.value,
+        "body": props.bodyInput.value,
                 
         }
 
         // != get
         // post
         fetch (
-            'https://web-unit.herokuapp.com/clientes',
+            'https://gorest.co.in/public-api/posts',
             {
                 method: 'POST',
                 headers: {'Content-type' : 'application/json'},
@@ -25,7 +27,7 @@ export class EspecialidadeController
         ).then( response =>{
             if (response.ok)
             {
-                console.log("Especialidade cadastrada!");
+                console.log("Produto cadastrado!");
                 console.log(response);
             }else
             {

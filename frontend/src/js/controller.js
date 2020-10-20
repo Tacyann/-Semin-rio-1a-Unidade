@@ -18,7 +18,6 @@ export class Controller
             case "index":
             case "home":
                 new Usuario().criar();
-                new Post().criar();
                 break;
 
         }

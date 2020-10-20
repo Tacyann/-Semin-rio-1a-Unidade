@@ -22,9 +22,7 @@ export class UsuarioController
             'https://gorest.co.in/public-api/users',
             {
                 method: 'POST',
-                headers: {"Access-Control-Allow-Origin":"*",
-                "Access-Control-Allow-Headers": "Content-Type , Access-Control-Allow-Headers, Authorization, X-Requested-With"},
-            
+                headers: {'Content-type' : 'application/json'},
                 body: JSON.stringify(this.dado)
             }
         ).then( response =>{

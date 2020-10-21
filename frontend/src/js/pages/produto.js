@@ -1,11 +1,12 @@
 export default class Produto {
 
-    async listar(){
+    listar = () =>
+    {
+        let index = document.getElementById("index");
 
         setClick = ( props ) =>
         {
-            // != get
-            // post
+           
             fetch (
                 'https://gorest.co.in/public-api/products',
                 {

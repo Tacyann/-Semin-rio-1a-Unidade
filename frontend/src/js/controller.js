@@ -23,7 +23,7 @@ export class Controller
                 new Post().criar();
                 break;
             case "listar-produtos":
-                new Produto().criar();
+                new Produto().listar();
                 break;
 
         }

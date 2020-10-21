@@ -1,28 +1,23 @@
-export class UsuarioController
-{
-    constructor ()
-    {
+export class UsuarioController{
+    constructor (){
         this.dado = {};
     }
-
     setClick = ( props ) =>
     {
-
         this.dado = {
             "name": props.nameInput.value,
             "email": props.emailInput.value,
             "gender": props.genderInput.value,
-            "status": props.statusInput.value
-                
+            "status": props.statusInput.value                
         }
-
-        // != get
-        // post
         fetch (
             'https://gorest.co.in/public-api/users',
             {
                 method: 'POST',
-                headers: {'Content-type' : 'application/json'},
+                headers: {
+                    'Content-type' : 'application/json',
+                    'Authorization': 'Bearer 4dd907bb208dc7dab3c57ed59162c857f919e36185d3c1eebb62447806fef3dc'
+                },
                 body: JSON.stringify(this.dado)
             }
         ).then( response =>{

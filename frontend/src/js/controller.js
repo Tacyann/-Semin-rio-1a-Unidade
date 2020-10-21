@@ -16,8 +16,14 @@ export class Controller
         {
             case "":
             case "index":
-            case "home":
+            case "user":
                 new Usuario().criar();
+                break;
+                case "post":
+                new Post().criar();
+                break;
+            case "listar-produtos":
+                new Produto().criar();
                 break;
 
         }
